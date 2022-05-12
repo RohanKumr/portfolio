@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
-export const Homepage = styled.div`
+export const Container = styled.div`
+    height:200vh;
     color:red;
 `;

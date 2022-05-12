@@ -1,8 +1,11 @@
 import React from 'react'
-import {Homepage} from './style'
+import navAndFooterWrapper from '../../common/hoc/navAndFooterWrapper'
+import { Container } from './style'
 
-export default function Homepage() {
+function Homepage() {
   return (
-      <Homepage>Random texts</Homepage>
+      <Container>Random texts</Container>
   )
 }
+
+export default navAndFooterWrapper(Homepage)

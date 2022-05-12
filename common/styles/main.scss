@@ -1,0 +1,33 @@
+html {
+    font-size: 16px;
+    // font-size: clamp(16px, 1vw, 32px); 
+}
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #1f2a55;
+    height: 100vh;
+    #__next {
+        height: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+.svg-fn {
+    fill: none;
+}
+.svg-fw {
+    fill: white;
+}
