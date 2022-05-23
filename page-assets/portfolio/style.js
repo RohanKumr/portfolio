@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  //empty
+  /* @extend .container; */
 `;
 export const Typing = styled.div`
   font-size: 32px;
