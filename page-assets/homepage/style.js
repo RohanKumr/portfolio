@@ -1,7 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  //empty
+  position: relative;
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  .languages {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
 `;
 export const Typing = styled.div`
   font-size: 32px;
@@ -9,4 +23,5 @@ export const Typing = styled.div`
   font-weight: bold;
   padding: 10px 20px;
   background: var(--navy);
+  text-align: center;
 `;

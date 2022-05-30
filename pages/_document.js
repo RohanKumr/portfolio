@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -27,6 +28,7 @@ export default class MyDocument extends Document {
       sheet.seal();
     }
   }
+
   render() {
     return (
       <Html>
@@ -37,6 +39,12 @@ export default class MyDocument extends Document {
             as="style"
             onLoad="this.onload=null;this.rel='stylesheet'"
           />
+          {/* <link
+            rel="preload"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+            as="style"
+            onLoad="this.onload=null;this.rel='stylesheet'"
+          ></link> */}
         </Head>
         <body>
           <Main />

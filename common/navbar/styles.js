@@ -41,6 +41,11 @@ export const SocialLinksContainer = styled.div`
     :active {
       color: inherit;
     }
+    > img {
+      width: 23px;
+      height: 23px;
+      border-radius: 10%;
+    }
   }
 `;
 
@@ -54,8 +59,12 @@ export const Menu = styled.div`
     padding: 12px 15px;
     cursor: pointer;
     transition: 0.3s;
+    width: 100%;
+    text-align: left;
+    border-left: 2px solid transparent;
     :hover {
       color: var(--blue);
+      border-left: 1px solid var(--blue);
     }
   }
 `;

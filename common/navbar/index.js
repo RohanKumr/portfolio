@@ -29,7 +29,10 @@ export default function Navbar() {
           href="https://www.linkedin.com/in/rohankumarrrr/"
           target="_blank"
         >
-          L
+          <img
+            src="https://image.similarpng.com/very-thumbnail/2021/01/Black-linkedin-logo-design-on-transparent-background-PNG.png"
+            alt=""
+          />
         </a>
         <a
           href="https://github.com/RohanKumr"
@@ -38,14 +41,25 @@ export default function Navbar() {
         >
           G
         </a>
-        <a className="social-link-container">F</a>
-        <a className="social-link-container">M</a>
+        <a
+          href="https://www.freecodecamp.org/rohankumar"
+          target="_blank"
+          className="social-link-container"
+        >
+          F
+        </a>
+        <a
+          className="social-link-container"
+          href="mailto:rkrohanrk065@gmail.com"
+        >
+          M
+        </a>
       </SocialLinksContainer>
       <Menu>
         <div onClick={() => router.push("/")}>Home</div>
+        <div onClick={() => router.push("/portfolio")}>Portfolio</div>
         <div>About</div>
         <div>Contact</div>
-        <div onClick={() => router.push("/portfolio")}>Portfolio</div>
       </Menu>
     </NavbarContainer>
   );
