@@ -14,14 +14,22 @@ export const Grid = styled.div`
 `;
 export const Project = styled.div`
   position: relative;
-  /* border: 3px solid var(--navy); */
   border: 1px solid grey;
   height: 250px;
   width: 250px;
-  /* border-radius: 8px; */
   transition-duration: 100ms;
+  background-image: ${(props) =>
+    props.background ? `url(${props.background})` : ""};
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
   :hover {
     border-left: 1px solid var(--blue);
+    .title {
+      color: var(--blue);
+    }
   }
   .title {
     position: absolute;
@@ -30,12 +38,8 @@ export const Project = styled.div`
     width: 100%;
     text-align: center;
     padding: 10px;
-    /* border-left: 3px solid transparent; */
+    font-weight: bold;
     background: var(--navy);
-    :hover {
-      color: var(--blue);
-      cursor: pointer;
-    }
   }
 `;
 export const Typing = styled.div`

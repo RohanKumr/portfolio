@@ -47,16 +47,10 @@ function Homepage() {
   }
 
   const particlesInit = async (main) => {
-    console.log(main);
-
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(tsParticles);
-  };
-
-  const particlesLoaded = (container) => {
-    console.log(container);
   };
 
   useEffect(() => {
@@ -68,13 +62,8 @@ function Homepage() {
       <Particles
         id="tsparticles"
         init={particlesInit}
-        loaded={particlesLoaded}
+        // loaded={particlesLoaded}
         options={{
-          background: {
-            // color: {
-            //   value: "#0d47a1",
-            // },
-          },
           fullScreen: false,
           fpsLimit: 30,
           interactivity: {
