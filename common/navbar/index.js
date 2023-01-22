@@ -12,7 +12,7 @@ const pages = {
 
 export default function Navbar() {
   const [currentPage, setCurrentPage] = useState(pages.HOME);
-
+  const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const onTabClick = (page) => {
     setCurrentPage(page);

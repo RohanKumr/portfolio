@@ -7,6 +7,7 @@ function Portfolio() {
   return (
     <Container id="container">
       <Grid>
+        <h1>PROJECTS</h1>
         {projects.map((proj) => (
           <Project
             onClick={() => window.open(proj.link, "_blank")}

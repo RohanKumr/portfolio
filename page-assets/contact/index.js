@@ -14,12 +14,15 @@ function Contact() {
   };
 
   const sendMail = () => {
-    console.log(inputData);
+    const { firstName, lastName, email, message } = inputData;
+    window.open(
+      `mailto:rkrohanrk065@gmail.com?subject=portfolio:${email}&body=${message}`
+    );
   };
   return (
     <Container id="container">
       <ContactForm>
-        <h1>Hire Me</h1>
+        <h1>Contact Me.</h1>
         <input
           name="firstName"
           value={inputData.firstName}

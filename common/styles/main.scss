@@ -49,7 +49,9 @@ a {
   background: var(--faded-navy);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  overflow: scroll;
+  padding: 100px;
 }
 
 .svg-fn {
