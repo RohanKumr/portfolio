@@ -1,13 +1,19 @@
-import bubbles from "../../images/projects/bubbles.png";
-import calculator from "../../images/projects/calculator.png";
-import drumMachine from "../../images/projects/drum-machine.png";
-import netflix from "../../images/projects/netflix.png";
-import quoter from "../../images/projects/quoter.png";
-import socialMediaApp from "../../images/projects/social-media-app.png";
+import bubbles from "../../public/images/projects/bubbles.png";
+import calculator from "../../public/images/projects/calculator.png";
+import drumMachine from "../../public/images/projects/drum-machine.png";
+import netflix from "../../public/images/projects/netflix.png";
+import eCommerce from "../../public/images/projects/e-commerce.jpg";
+import quoter from "../../public/images/projects/quoter.png";
+import socialMediaApp from "../../public/images/projects/social-media-app.png";
 
 export const projects = [
   {
-    name: "Netflix",
+    name: "Arrivals",
+    src: eCommerce.src,
+    link: `https://github.com/RohanKumr/e-commerce-website`,
+  },
+  {
+    name: "Netflix Clone",
     src: netflix.src,
     link: `https://netflix-clone-demo-e189a.firebaseapp.com`,
   },
@@ -16,11 +22,7 @@ export const projects = [
     src: socialMediaApp.src,
     link: `https://github.com/RohanKumr/campk12`,
   },
-  {
-    name: "Bubbles Game",
-    src: bubbles.src,
-    link: `https://github.com/RohanKumr/bubbles`,
-  },
+
   {
     name: "Calculator",
     src: calculator.src,
@@ -36,5 +38,10 @@ export const projects = [
     name: "Drum Machine",
     src: drumMachine.src,
     link: `https://codepen.io/rohan-kumar/full/JjjqYbg`,
+  },
+  {
+    name: "Bubbles Game",
+    src: bubbles.src,
+    link: `https://github.com/RohanKumr/bubbles`,
   },
 ];

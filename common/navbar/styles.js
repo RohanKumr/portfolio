@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { inherits } from "util";
 
 export const NavbarContainer = styled.div`
   text-align: center;
@@ -33,9 +34,6 @@ export const SocialLinksContainer = styled.div`
     align-items: center;
     cursor: pointer;
     transition: 0.3s;
-    :hover {
-      background: var(--blue);
-    }
     :visited,
     :hover,
     :active {
@@ -46,6 +44,20 @@ export const SocialLinksContainer = styled.div`
       height: 23px;
       border-radius: 10%;
     }
+    border: 0.1px solid rgba(31, 42, 85, 0.2);
+  }
+  .github {
+    border-radius: 7px;
+    background: white;
+  }
+  .freecodecamp {
+    /* border: 1px solid rgba(31, 42, 85, 0.2); */
+    border-radius: 6px;
+    /* background: #0a0a23; */
+    background: white;
+
+    /* background: grey; */
+    /* color: white; */
   }
 `;
 
@@ -55,16 +67,19 @@ export const Menu = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  div {
-    padding: 12px 15px;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 100%;
-    text-align: left;
-    border-left: 2px solid transparent;
-    :hover {
-      color: var(--blue);
-      border-left: 1px solid var(--blue);
-    }
+`;
+
+export const Tab = styled.div`
+  padding: 12px 15px;
+  transition: 0.3s;
+  width: 100%;
+  text-align: left;
+  border-left: 2px solid transparent;
+  /* color: ${({ active }) => (active ? "var(--blue)" : "inherit")}; */
+  border-left: ${({ active }) => (active ? "1px solid var(--blue)" : "none")};
+  cursor: pointer;
+  :hover {
+    color: var(--blue);
+    border-left: 1px solid var(--blue);
   }
 `;

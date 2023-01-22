@@ -1,16 +1,9 @@
-import { Router } from "next/router";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { projects } from "./projectsData";
 
 import { Container, Grid, Project } from "./style";
 
 function Portfolio() {
-  useEffect(() => {
-    // document
-    //   .querySelector(".project")
-    //   .addEventListener("click", () => {}, true);
-  }, []);
-  console.log(projects);
   return (
     <Container id="container">
       <Grid>
