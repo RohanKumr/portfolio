@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, ContactForm } from "./style";
+import { ContactsWrapper, ContactForm } from "./style";
 
 function Contact() {
   const [inputData, setInputData] = useState({
@@ -20,7 +20,7 @@ function Contact() {
     );
   };
   return (
-    <Container id="container">
+    <ContactsWrapper id="container">
       <ContactForm>
         <h1>Contact Me.</h1>
         <input
@@ -56,7 +56,7 @@ function Contact() {
           Have an Account? Login here.
         </div> */}
       </ContactForm>
-    </Container>
+    </ContactsWrapper>
   );
 }
 

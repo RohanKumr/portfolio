@@ -10,6 +10,10 @@ export const Container = styled.div`
     height: 100%;
     width: 100%;
     z-index: 0;
+    display: "flex";
+    flex-direction: "column";
+    justify-content: "center";
+    opacity: 0.2;
   }
   .languages {
     padding-top: 20px;

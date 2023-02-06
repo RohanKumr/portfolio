@@ -30,7 +30,7 @@ export const projects = [
   {
     name: "Netflix Clone",
     src: netflix.src,
-    link: `https://netflix-clone-demo-e189a.firebaseapp.com`,
+    link: `https://netflix-clone-trailers.web.app/`,
   },
 
   {

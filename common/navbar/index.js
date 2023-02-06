@@ -15,6 +15,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const onTabClick = (page) => {
+    return;
     setCurrentPage(page);
 
     switch (page) {

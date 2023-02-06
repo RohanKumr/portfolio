@@ -3,6 +3,8 @@ import navAndFooterWrapper from "../../common/hoc/navAndFooterWrapper";
 import { Container, Typing } from "./style";
 import { helper } from "../../helper/index";
 import BackgroundParticles from "./backgroundParticles";
+import Portfolio from "../portfolio";
+import Contact from "../contact";
 
 function Homepage() {
   const [text, setText] = useState("");
@@ -45,24 +47,35 @@ function Homepage() {
   }
 
   // useEffect(() => {
-  // const id = typeWriter();
+  //   const id = typeWriter();
   // });
 
   return (
     <Container id="container">
       <BackgroundParticles />
       {/* <Typing>{text}</Typing> */}
-      <div className="flex" style={{ position: "relative" }}>
-        <Typing>Frontend Developer ( SDE1 )</Typing>
-        <hr />
-        <Typing>Ex Camp-K12 (2yrs)</Typing>
-
-        <div className="languages">
-          Javascript | React | Redux | Cypress | Styled Componenets
-        </div>
-      </div>
+      <Introduction />
+      <Portfolio />
+      <Contact />
     </Container>
   );
 }
+
+const Introduction = () => {
+  return (
+    <div
+      className="flex"
+      style={{ position: "relative", maxWidth: "790px", margin: "auto" }}
+    >
+      <Typing>Frontend Developer ( SDE1 )</Typing>
+      <hr />
+      <Typing>Ex Camp-K12 (2yrs)</Typing>
+
+      <div className="languages">
+        Javascript | React | Redux | Cypress | Styled Components
+      </div>
+    </div>
+  );
+};
 
 export default navAndFooterWrapper(Homepage);

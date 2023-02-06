@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const ContactsWrapper = styled.div`
   /* @extend .container; */
   overflow: hidden;
 `;
@@ -8,9 +8,10 @@ export const ContactForm = styled.div`
   h1 {
     margin: 0;
   }
-  max-width: 500px;
+  margin: auto;
+  max-width: 790px;
   width: 100%;
-  padding: 80px;
+  /* padding: 80px; */
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -25,6 +26,10 @@ export const ContactForm = styled.div`
     color: black;
     outline: none;
     letter-spacing: 1.2px;
+  }
+  input,
+  textarea {
+    opacity: 0.7;
   }
   textarea {
     min-height: 150px;

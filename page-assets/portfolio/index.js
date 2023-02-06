@@ -1,23 +1,25 @@
 import React from "react";
 import { projects } from "./projectsData";
 
-import { Container, Grid, Project } from "./style";
+import { ProjectsWrapper, Grid, Project } from "./style";
 
 function Portfolio() {
   return (
-    <Container id="container">
+    // <Container id="container">
+    <ProjectsWrapper>
+      <h1>PROJECTS</h1>
       <Grid>
-        <h1>PROJECTS</h1>
         {projects.map((proj) => (
           <Project
             onClick={() => window.open(proj.link, "_blank")}
             background={proj.src}
           >
+            <div className="layer"></div>
             <div className="title">{proj.name}</div>
           </Project>
         ))}
       </Grid>
-    </Container>
+    </ProjectsWrapper>
   );
 }
 
